@@ -1,0 +1,17 @@
+class checker:
+    def plagiarism_status(self, common_words_count, unique_words_count):
+        if unique_words_count == 0:
+            plagiarism_count = 0.0
+        else:
+            plagiarism_count = (common_words_count / unique_words_count) * 100
+        
+        print("="*60)
+        print(" PLAGIARISM STATUS ")
+        print("="*60)
+        print(f"This is your plagiarism status: {plagiarism_count:.2f} %")  
+        
+        if plagiarism_count >= 50:
+            print("\nPer the standards ,there is plagiarism\n")
+        else:
+            print("\nPer standards ,there is no plagiarism\n")
+
