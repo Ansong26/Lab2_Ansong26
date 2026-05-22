@@ -1,4 +1,4 @@
- import cleaner
+import cleaner
 import searcher
 import checker
 
